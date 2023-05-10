@@ -1,0 +1,204 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body{background-color:#131116;
+     color: #ffffff;
+     font-family:'Poppins', sans-serif;
+     padding:0;
+     margin:0;
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height:100vh;
+
+}
+.hidden{
+    opacity:0;
+    filter:blur(5px);
+    transform: translateX(-100%);
+    transition:all 1s;
+
+}
+@media (prefers-reduced-motion: no-preference) {
+    .hidden {
+        transition: all 1s;
+    }
+}
+
+.show{
+    opacity:1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+}
+
+#bg-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -999;
+}
+p{
+    text-align:center;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+    a:hover, a:active {
+       color: orangered;
+    }
+
+#link {
+    font-size: 3vw;
+    letter-spacing: 0vw;
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: none;
+}
+    #link:hover, #link:active {
+        color: orangered;
+        
+    }
+
+#f {
+    color: lightgrey;
+    position: relative;
+}
+
+.word {
+    width: 90%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+    .word span {
+        display: inline-block;
+        font-family: "Poppins", sans-serif;
+        font-size: 8vw;
+        font-weight: 500;
+        color: #ffffff;
+        letter-spacing: 5vw;
+        text-shadow: 0 15px 25px rgba(0,0,0,0.2);
+        position: relative;
+        transform: translateY(-100vh);
+        animation: fall 3.5s forwards;
+    }
+
+@keyframes fall {
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.word span:nth-child(2) {
+    animation-delay: 0.7s;
+}
+
+.word span:nth-child(3) {
+    animation-delay: 1.4s;
+}
+
+.word span:nth-child(4) {
+    animation-delay: 2.0s;
+}
+
+.word span:nth-child(5) {
+    animation-delay: 2.6s;
+}
+
+.word span:nth-child(6) {
+    animation-delay: 3.3s;
+}
+
+.word span:nth-child(7) {
+    animation-delay: 4.0s;
+}
+
+.word span:nth-child(8) {
+    animation-delay: 4.7s;
+}
+
+.word span:nth-child(9) {
+    animation-delay: 5.0s;
+}
+
+
+
+
+/* Flickering animation */
+#neonH1 {
+    animation: flicker 2.5s infinite alternate;
+    color: #fff;
+    font-size: 4.2rem;
+    text-align: center;
+    
+    font-weight: 400;
+}
+
+
+@keyframes flicker {
+
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa, 0 0 80px #0fa, 0 0 90px #0fa, 0 0 100px #0fa, 0 0 150px #0fa;
+    }
+
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+}
+
+
+
+
+.logo {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.logo:nth-child(2){
+    transition-delay:200ms;
+}
+.logo:nth-child(3){
+    transition-delay:400ms;
+}
+
+#footer {
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
