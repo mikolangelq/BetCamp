@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 body{background-color:#131116;
      color: #ffffff;
@@ -44,6 +44,12 @@ section{
 }
 
 #bg-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -999;
+}
+#bg-video2 {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
